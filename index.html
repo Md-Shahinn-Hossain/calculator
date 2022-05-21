@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-1/2 mx-auto my-16">
+        <div class="grid grid-cols-4 gap-2 ">
+             <div class="col-span-4">
+                 <input type="text" class="border-4 w-full h-24 text-right rounded-xl px-5 text-2xl" id="result" value="">
+             </div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="Delete()">C</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="singleDelete()">X</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('(')">(</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate(')')">)</button></div>
+
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('7')">7</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('8')">8</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('9')">9</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('*')">x</button></div>
+
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('4')">4</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('5')">5</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('6')">6</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('/')">/</button></div>
+
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('1')">1</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('2')">2</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('3')">3</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('+')">+</button></div>
+
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('0')">0</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('.')">.</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="finalResult()">=</button></div>
+             <div class="bg-green-300 text-2xl rounded-lg text-center "><button class = "w-3/4 p-5" onclick="calculate('-')">-</button></div>
+
+             
+        </div>
+        <p id="para">Shahin</p>
+    </section>
+    <script src="code.js"></script>
+</body>
+</html>
